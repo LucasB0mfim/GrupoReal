@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 export const Asidee = styled.aside`
   display: flex;
@@ -26,7 +27,7 @@ export const Box = styled.div`
   }
 `
 
-export const Btn = styled.button`
+export const Btn = styled(Link)`
   display: flex;
   align-items: center;
   justify-content: center;
