@@ -5,7 +5,7 @@ const Visitante = () => (
   <Container>
     <h1>Estamos em manutenção, volte outra hora!</h1>
     <img src={maintenance} />
-    <Btn to="/home">Início</Btn>
+    <Btn to="/">Início</Btn>
   </Container>
 )
 

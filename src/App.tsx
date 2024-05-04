@@ -7,7 +7,7 @@ import Visitante from './pages/Visitante'
 
 const rotas = createBrowserRouter([
   {
-    path: '/home',
+    path: '/',
     element: <Home />
   },
   {
@@ -15,7 +15,7 @@ const rotas = createBrowserRouter([
     element: <Colaborador />
   },
   {
-    path: '/home/visitante',
+    path: '/visitante',
     element: <Visitante />
   }
 ])

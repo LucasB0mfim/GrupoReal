@@ -6,7 +6,7 @@ const Aside = () => (
       <h1>Bem vindo!</h1>
       <CampoBtn>
         <Btn to="/colaborador">Colaborador</Btn>
-        <Btn to="visitante">Visitante</Btn>
+        <Btn to="/visitante">Visitante</Btn>
       </CampoBtn>
     </Box>
   </Asidee>
