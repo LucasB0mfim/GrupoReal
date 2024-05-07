@@ -1,5 +1,5 @@
 import { Mainn } from './styles'
-import logo from '../../assets/images/logo.jpg'
+import logo from '../../assets/images/iconHome.jpg'
 
 const Main = () => (
   <Mainn>

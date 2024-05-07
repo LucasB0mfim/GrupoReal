@@ -1,11 +1,26 @@
-import { Btn, Container } from './styles'
-import maintenance from '../../assets/images/maintenance.png'
+import {
+  Btn,
+  Container,
+  Converter,
+  ConversionArea,
+  ConversionAreatwo,
+  ConverterTwo
+} from './styles'
+import Header from '../../components/Header'
+
 const Colaborador = () => (
-  <Container>
-    <h1>Estamos em manutenção, volte outra hora!</h1>
-    <img src={maintenance} />
-    <Btn to="/">Início</Btn>
-  </Container>
+  <>
+    <Header />
+    <Container>
+      <ConversionArea>
+        <Converter placeholder="Cole sua cotação aqui" />
+        <Btn type="button">CONVERTER</Btn>
+      </ConversionArea>
+      <ConversionAreatwo>
+        <ConverterTwo disabled />
+      </ConversionAreatwo>
+    </Container>
+  </>
 )
 
 export default Colaborador
