@@ -1,12 +1,16 @@
-import { Top } from './styles'
+import { Top, Link } from './styles'
 import logo from '../../assets/images/LogoReal.png'
+import home from '../../assets/images/home.gif'
 
 const Header = () => (
   <Top>
-    <a href="/">
+    <Link href="/">
       <img src={logo} draggable="false" />
-    </a>
-    <a href="/">Sair</a>
+    </Link>
+    <Link href="/">
+      Sair
+      <img src={home} className="icon--home" />
+    </Link>
   </Top>
 )
 

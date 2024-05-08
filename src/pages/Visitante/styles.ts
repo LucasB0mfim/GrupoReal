@@ -1,36 +1,38 @@
-import { Link } from 'react-router-dom'
-
 import styled from 'styled-components'
 
 export const Container = styled.div`
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-direction: column;
-  height: 100vh;
-  width: 100%;
 
   img {
-    width: 200px;
-    margin-top: 20px;
+    width: 100px;
   }
 `
 
-export const Btn = styled(Link)`
-  color: #fff;
-  width: 100px;
-  height: 50px;
-  margin-top: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  border-radius: 10px;
-  background-color: #092c4c;
-  transition: all linear 0.2s;
+export const Title = styled.h1``
 
-  &:hover {
-    background-color: #0e3e6a;
-    transition: all linear 0.2s;
+export const Box = styled.div`
+  max-width: 1024px;
+  width: 100%;
+  margin-top: 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  p {
+    margin: 5% 0;
   }
+`
+
+export const Collaborators = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 5%;
+`
+
+export const Operation = styled.div`
+  margin-top: 5%;
 `

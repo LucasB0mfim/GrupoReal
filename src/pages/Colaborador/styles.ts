@@ -1,83 +1,57 @@
-import { Link } from 'react-router-dom'
-
 import styled from 'styled-components'
 
 export const Container = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 100%;
+  background-color: #eee;
+`
+
+export const Main = styled.main`
+  width: 50%;
   height: calc(100vh - 77.2px);
-
-  img {
-    width: 200px;
-    margin-top: 20px;
-  }
-`
-
-export const ConversionArea = styled.div`
-  width: 50%;
-  height: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-`
-
-export const ConversionAreatwo = styled.div`
-  width: 50%;
-  height: 100%;
-  display: flex;
   align-items: center;
   justify-content: start;
-  flex-direction: column;
 `
 
-export const Converter = styled.textarea`
-  width: 90%;
-  height: 80%;
-  resize: none;
-  padding-left: 10px;
-  padding-top: 10px;
-  font-size: 16px;
-  border: none;
-  background-color: #cccccc;
-  border-radius: 5px;
-  outline: none;
-  box-shadow: 0px 1px 40px #c2c2c2;
+export const Aside = styled.aside`
+  width: 50%;
+  height: calc(100vh - 77.2px);
+  display: flex;
+  align-items: top;
+  justify-content: center;
 `
 
-export const ConverterTwo = styled.textarea`
+export const TextArea = styled.textarea`
   width: 90%;
   height: 80%;
+  font-size: 14px;
+  margin-top: 3.3%;
   resize: none;
+  border: none;
+  outline: none;
+  border-radius: 10px;
   padding-left: 10px;
   padding-top: 10px;
-  font-size: 16px;
-  border: none;
-  background-color: #cccccc;
-  border-radius: 5px;
-  outline: none;
-  box-shadow: 0px 1px 40px #c2c2c2;
-  margin-top: 22px;
+  background-color: #ccc;
+  box-shadow: 0px 0px 6px #2c2c2c;
 `
 
 export const Btn = styled.button`
-  color: #fff;
   width: 90%;
-  height: 50px;
-  margin-top: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 10%;
+  margin-top: 10px;
+  outline: none;
   border: none;
   border-radius: 10px;
+  color: #eee;
   background-color: #092c4c;
-  transition: all linear 0.2s;
   cursor: pointer;
+  transition: all linear 0.2s;
 
   &:hover {
-    background-color: #0e3e6a;
+    background-color: #082540;
     transition: all linear 0.2s;
   }
 `

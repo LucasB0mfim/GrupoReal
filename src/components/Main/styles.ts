@@ -6,4 +6,8 @@ export const Mainn = styled.main`
   justify-content: center;
   width: 50%;
   height: 100%;
+
+  img {
+    width: 400px;
+  }
 `

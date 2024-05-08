@@ -1,24 +1,17 @@
-import {
-  Btn,
-  Container,
-  Converter,
-  ConversionArea,
-  ConversionAreatwo,
-  ConverterTwo
-} from './styles'
+import { Container, Main, TextArea, Btn, Aside } from './styles'
 import Header from '../../components/Header'
 
 const Colaborador = () => (
   <>
     <Header />
     <Container>
-      <ConversionArea>
-        <Converter placeholder="Cole sua cotação aqui" />
+      <Main>
+        <TextArea placeholder="Cole sua cotação aqui!" />
         <Btn type="button">CONVERTER</Btn>
-      </ConversionArea>
-      <ConversionAreatwo>
-        <ConverterTwo disabled />
-      </ConversionAreatwo>
+      </Main>
+      <Aside>
+        <TextArea className="TextArea--two" disabled />
+      </Aside>
     </Container>
   </>
 )
