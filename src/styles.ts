@@ -1,11 +1,11 @@
 import { createGlobalStyle } from 'styled-components'
 
 export const cores = {
-  white: '#eee',
+  white: '#fff',
   black: '#111',
   blue: '#092c4c',
   darkBlue: '#082540',
-  gray: '##ccc',
+  gray: '#ccc',
   lightGray: '#A3A3A3',
   darkGray: '#2c2c2c'
 }

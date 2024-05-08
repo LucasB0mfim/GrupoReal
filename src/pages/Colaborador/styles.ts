@@ -3,13 +3,14 @@ import { cores } from '../../styles'
 
 export const Container = styled.div`
   display: flex;
-  align-items: center;
+  align-items: start;
   background-color: ${cores.white};
 
   @media (max-width: 768px) {
     flex-direction: column;
     justify-content: center;
-    height: calc(100vh - 53.2px);
+    align-items: center;
+    height: 100%;
   }
 `
 
@@ -22,7 +23,7 @@ export const Main = styled.main`
   justify-content: start;
 
   @media (max-width: 768px) {
-    width: 90%;
+    width: 100%;
     height: 50%;
   }
 `
@@ -35,14 +36,14 @@ export const Aside = styled.aside`
   justify-content: center;
 
   @media (max-width: 768px) {
-    width: 90%;
+    width: 100%;
     height: 50%;
   }
 `
 
 export const TextArea = styled.textarea`
   width: 90%;
-  height: 80%;
+  height: 480px;
   font-size: 14px;
   margin-top: 3.3%;
   resize: none;
@@ -51,7 +52,7 @@ export const TextArea = styled.textarea`
   border-radius: 10px;
   padding-left: 10px;
   padding-top: 10px;
-  background-color: ${cores.gray};
+  background-color: ${cores.white};
   box-shadow: 0px 0px 6px ${cores.darkGray};
   overflow-y: auto;
 
@@ -72,6 +73,11 @@ export const TextArea = styled.textarea`
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
   }
+
+  @media (max-width: 768px) {
+    height: 300px;
+    margin-top: 10px;
+  }
 `
 
 export const Btn = styled.button`
@@ -90,5 +96,9 @@ export const Btn = styled.button`
   &:hover {
     background-color: ${cores.darkBlue};
     transition: all linear 0.2s;
+  }
+
+  @media (max-width: 768px) {
+    height: 50px;
   }
 `

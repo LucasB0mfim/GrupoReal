@@ -10,7 +10,7 @@ const Colaborador = () => (
         <Btn type="button">CONVERTER</Btn>
       </Main>
       <Aside>
-        <TextArea className="TextArea--two" disabled />
+        <TextArea disabled />
       </Aside>
     </Container>
   </>
