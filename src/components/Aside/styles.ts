@@ -32,6 +32,11 @@ export const Box = styled.div`
     color: ${cores.white};
     margin-top: 40px;
   }
+
+  @media (max-width: 768px) {
+    width: 90%;
+    height: 50vh;
+  }
 `
 
 export const Btn = styled(Link)`
@@ -52,6 +57,10 @@ export const Btn = styled(Link)`
     background-color: ${cores.darkBlue};
     transition: all linear 0.2s;
   }
+
+  @media (max-width: 768px) {
+    margin-bottom: 20px;
+  }
 `
 export const CampoBtn = styled.div`
   display: flex;
@@ -59,4 +68,8 @@ export const CampoBtn = styled.div`
   flex-direction: column;
   width: 100%;
   margin-bottom: 30px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 80px;
+  }
 `
