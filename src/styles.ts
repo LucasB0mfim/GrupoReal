@@ -7,7 +7,8 @@ export const cores = {
   darkBlue: '#082540',
   gray: '#ccc',
   lightGray: '#A3A3A3',
-  darkGray: '#2c2c2c'
+  darkGray: '#2c2c2c',
+  red: '#ff4c4c'
 }
 
 export const breakpoints = {

@@ -1,7 +1,15 @@
 import styled from 'styled-components'
 import { cores } from '../../styles'
 
+export const Box = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`
+
 export const Container = styled.div`
+  width: 100%;
   display: flex;
   align-items: start;
   background-color: ${cores.white};
@@ -31,8 +39,8 @@ export const Main = styled.main`
 export const Aside = styled.aside`
   width: 50%;
   height: calc(100vh - 77.2px);
+  align-items: start;
   display: flex;
-  align-items: top;
   justify-content: center;
 
   @media (max-width: 768px) {
@@ -44,8 +52,10 @@ export const Aside = styled.aside`
 export const TextArea = styled.textarea`
   width: 90%;
   height: 480px;
+  color: ${cores.darkGray};
+  font-family: 'Open Sans', sans-serif;
   font-size: 14px;
-  margin-top: 3.3%;
+  margin-top: 12px;
   resize: none;
   border: none;
   outline: none;
@@ -69,7 +79,6 @@ export const TextArea = styled.textarea`
 
   /* Cor do fundo da barra de rolagem */
   &::-webkit-scrollbar-track {
-    background-color: ${cores.gray};
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
   }
@@ -101,4 +110,31 @@ export const Btn = styled.button`
   @media (max-width: 768px) {
     height: 50px;
   }
+`
+
+export const Alert = styled.div`
+  position: relative;
+  width: 95%;
+  height: 50px;
+  margin-top: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  background-color: ${cores.red};
+
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+`
+
+export const Close = styled.div`
+  position: absolute;
+  top: 1%;
+  left: 97%;
+  display: flex;
+  justify-content: center;
+  width: 20px;
+  cursor: pointer;
 `
