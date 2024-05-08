@@ -137,4 +137,8 @@ export const Close = styled.div`
   justify-content: center;
   width: 20px;
   cursor: pointer;
+
+  @media (max-width: 768px) {
+    left: 94%;
+  }
 `
