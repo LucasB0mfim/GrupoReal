@@ -1,6 +1,21 @@
 import { createGlobalStyle } from 'styled-components'
 
-const GlobalStyles = createGlobalStyle`
+export const cores = {
+  white: '#eee',
+  black: '#111',
+  blue: '#092c4c',
+  darkBlue: '#082540',
+  gray: '##ccc',
+  lightGray: '#A3A3A3',
+  darkGray: '#2c2c2c'
+}
+
+export const breakpoints = {
+  desktop: '1024px',
+  tablet: '768px'
+}
+
+export const GlobalStyles = createGlobalStyle`
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,5 +24,3 @@ const GlobalStyles = createGlobalStyle`
   font-family: "Open Sans", sans-serif;
 }
 `
-
-export default GlobalStyles

@@ -1,8 +1,9 @@
 import styled from 'styled-components'
+import { cores } from '../../styles'
 
 export const Top = styled.header`
   padding: 10px 3%;
-  background-color: #092c4c;
+  background-color: ${cores.blue};
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -19,7 +20,7 @@ export const Top = styled.header`
 `
 
 export const Link = styled.a`
-  color: #bdbdbd;
+  color: ${cores.lightGray};
   font-size: 14px;
   font-weight: 600;
   display: flex;
@@ -28,7 +29,7 @@ export const Link = styled.a`
   transition: all linear 0.2s;
 
   &:hover {
-    color: #fff;
+    color: ${cores.white};
     transition: all linear 0.2s;
 
     .icon--home {

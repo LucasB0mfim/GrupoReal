@@ -1,9 +1,16 @@
 import styled from 'styled-components'
+import { cores } from '../../styles'
 
 export const Container = styled.div`
   display: flex;
   align-items: center;
-  background-color: #eee;
+  background-color: ${cores.white};
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100vh - 53.2px);
+  }
 `
 
 export const Main = styled.main`
@@ -13,6 +20,11 @@ export const Main = styled.main`
   flex-direction: column;
   align-items: center;
   justify-content: start;
+
+  @media (max-width: 768px) {
+    width: 90%;
+    height: 50%;
+  }
 `
 
 export const Aside = styled.aside`
@@ -21,6 +33,11 @@ export const Aside = styled.aside`
   display: flex;
   align-items: top;
   justify-content: center;
+
+  @media (max-width: 768px) {
+    width: 90%;
+    height: 50%;
+  }
 `
 
 export const TextArea = styled.textarea`
@@ -34,8 +51,27 @@ export const TextArea = styled.textarea`
   border-radius: 10px;
   padding-left: 10px;
   padding-top: 10px;
-  background-color: #ccc;
-  box-shadow: 0px 0px 6px #2c2c2c;
+  background-color: ${cores.gray};
+  box-shadow: 0px 0px 6px ${cores.darkGray};
+  overflow-y: auto;
+
+  /* Largura da barra de rolagem */
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Cor do controle da barra de rolagem */
+  &::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+  }
+
+  /* Cor do fundo da barra de rolagem */
+  &::-webkit-scrollbar-track {
+    background-color: ${cores.gray};
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
 `
 
 export const Btn = styled.button`
@@ -45,13 +81,14 @@ export const Btn = styled.button`
   outline: none;
   border: none;
   border-radius: 10px;
-  color: #eee;
-  background-color: #092c4c;
+  color: ${cores.white};
+  font-weight: 600;
+  background-color: ${cores.blue};
   cursor: pointer;
   transition: all linear 0.2s;
 
   &:hover {
-    background-color: #082540;
+    background-color: ${cores.darkBlue};
     transition: all linear 0.2s;
   }
 `

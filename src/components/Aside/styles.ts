@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
+import { cores } from '../../styles'
 
 export const Asidee = styled.aside`
   display: flex;
@@ -8,6 +9,11 @@ export const Asidee = styled.aside`
   flex-direction: column;
   width: 50%;
   height: 100%;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 100vh;
+  }
 `
 
 export const Box = styled.div`
@@ -23,7 +29,7 @@ export const Box = styled.div`
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 
   h1 {
-    color: #fff;
+    color: ${cores.white};
     margin-top: 40px;
   }
 `
@@ -32,18 +38,18 @@ export const Btn = styled(Link)`
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: ${cores.white};
   width: 90%;
   height: 60px;
   margin-bottom: 10px;
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  background-color: #092c4c;
+  background-color: ${cores.blue};
   transition: all linear 0.2s;
 
   &:hover {
-    background-color: #082540;
+    background-color: ${cores.darkBlue};
     transition: all linear 0.2s;
   }
 `

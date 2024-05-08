@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
-import GlobalStyles from './styles'
+import { GlobalStyles } from './styles'
 import Home from './pages/Home'
 import Colaborador from './pages/Colaborador'
 import Visitante from './pages/Visitante'

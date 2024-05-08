@@ -10,4 +10,12 @@ export const Mainn = styled.main`
   img {
     width: 400px;
   }
+
+  @media (max-width: 768px) {
+    width: 0%;
+    height: 0%;
+    img {
+      display: none;
+    }
+  }
 `
